@@ -5,3 +5,10 @@
 <% @movies.each do |movie| %>
 <p><%= "#{movie.title}" %></p>
 <% end %>
+<%= "Actors working for #{@studio.name}" %>
+<% @actors.each do |actor| %>
+<%= "Actor name: #{actor.name}" %>
+<%= "Actor age: #{actor.age}" %>
+<%= "Actor working: #{actor.working}" %>
+<% end %>
+
