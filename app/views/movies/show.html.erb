@@ -1,0 +1,8 @@
+<%= "#{@movie.title} Information" %>
+<%= "Movie title: #{@movie.title}" %>
+<%= "Movie creation year: #{@movie.creation_year}" %>
+<%= "Movie genre: #{@movie.genre}" %>
+<%= "Movie actors:" %>
+<% @movie.actors.each do |actor| %>
+<%= actor.name %>
+<% end %>
