@@ -9,7 +9,7 @@
 <% end %>
 
 
-<%= form_with url: "/movies/#{@movie.id}/update", method: :patch, local: true do |form|  %>
+<%= form_with url: "/movies/#{@movie.id}/update", method: :patch, local: true do |form| %>
   <%= form.label :actor, "Add Actor" %>
   <%= form.text_field :actor %>
   <%= form.submit 'Submit' %>
