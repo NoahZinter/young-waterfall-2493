@@ -3,6 +3,14 @@
 <%= "Movie creation year: #{@movie.creation_year}" %>
 <%= "Movie genre: #{@movie.genre}" %>
 <%= "Movie actors:" %>
+
 <% @actors.each do |actor| %>
-<%= actor.name %>
+  <%= actor.name %>
+<% end %>
+
+
+<%= form_with url: "/movies/#{@movie.id}/update", method: :patch, local: true do |form|  %>
+  <%= form.label :actor, "Add Actor" %>
+  <%= form.text_field :actor %>
+  <%= form.submit 'Submit' %>
 <% end %>
