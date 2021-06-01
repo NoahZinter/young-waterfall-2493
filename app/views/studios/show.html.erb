@@ -1,3 +1,7 @@
 </p><%= "#{@studio.name} details:" %></p>
 <p><%= "Studio Name: #{@studio.name}" %></p>
 <p><%= "Studio Location: #{@studio.location}" %></p>
+<p><%= "Studio Movies:" %></p>
+<% @movies.each do |movie| %>
+<p><%= "#{movie.title}" %></p>
+<% end %>
