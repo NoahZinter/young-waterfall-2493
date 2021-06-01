@@ -8,5 +8,7 @@ describe 'studio show' do
   
   it 'displays studio name and location' do
     expect(page).to have_content("Marvel details:")
+    expect(page).to have_content("Studio Name: Marvel")
+    expect(page).to have_content("Studio Location: Hollywood")
   end
 end
