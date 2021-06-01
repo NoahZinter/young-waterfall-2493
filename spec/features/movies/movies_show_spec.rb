@@ -14,4 +14,10 @@ describe 'movie show' do
     expect(page).to have_content('Movie creation year: 1990')
     expect(page).to have_content('Movie genre: Action')
   end
+  it 'displays all actors in a movie' do
+    save_and_open_page
+    expect(page).to have_content('Harrison Ford')
+    expect(page).to have_content('Will Ferrell')
+    expect(page).to have_content('Scarlett Johanssen')
+  end
 end
